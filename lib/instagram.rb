@@ -41,7 +41,7 @@ module Instagram
   
   def get_url(url)
     response = Net::HTTP.start(url.host, url.port) { |http|
-      http.get url.request_uri, 'User-agent' => 'Instagram'
+      http.get url.request_uri, 'User-agent' => 'Instagram 1.12.1 (iPod touch; iPhone OS 4.2.1; en_US)'
     }
     
     if Net::HTTPSuccess === response
